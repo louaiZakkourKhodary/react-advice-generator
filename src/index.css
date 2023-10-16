@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Manrope:wght@800&family=Outfit:wght@400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* font-family: 'Fraunces', serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Outfit', sans-serif; */
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+body {
+  background-color: var(--Dark-Grayish-Blue);
+}
+.loading {
+  font-family: 'Manrope';
+  font-size: 32px;
+  text-align: center;
+  margin: 50px auto;
+  color: var(--Dark-Blue);
+  text-transform: uppercase;
+}
+.container {
+  position: relative;
+  width: 500px;
+  background-color: var(--Dark-Blue);
+  margin: 100px auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.advice-title {
+  margin-top: 40px;
+  color: var(--Neon-Green);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: 'Outfit', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px 20px;
+}
+.advice-text {
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 19px;
+  text-align: center;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  overflow: hidden;
+}
+.divider {
+  display: flex;
+  padding: 40px 10px;
+  justify-content: center;
+  align-items: center;
+}
+.btn-container {
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translate(-48%);
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.svg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 715px) {
+  .container {
+    width: 400px;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    width: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn-container {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translate(-45%);
+  }
+}
